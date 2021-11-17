@@ -1,0 +1,29 @@
+{
+  "name": "youtubestats-function",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "Julián Duque <jduque@salesforce.com>",
+  "description": "This function receives a playlist id, retrieves its videos, and store each video statistics in Salesforce",
+  "license": "CC0-1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git"
+  },
+  "engines": {
+    "node": "^16.9"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .js --config .eslintrc",
+    "test": "mocha --loader=esmock --no-warnings"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^6.8.0",
+    "esmock": "^1.0.1",
+    "mocha": "^8.4.0",
+    "sinon": "^10.0.0"
+  },
+  "dependencies": {
+    "googleapis": "^91.0.0"
+  }
+}
